@@ -6,9 +6,12 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     sassOptions: {
       includePaths: [
-        'node_modules/bulma'
+        'node_modules/bulma',
       ]
     },
+    'ember-font-awesome': {
+      useScss: true
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
