@@ -1,7 +1,13 @@
 /* Vars */
+$success: #39aa56;
 
 /* Libs */
 @import 'bulma';
 @import 'font-awesome';
 
 /* Styles */
+@import './reset';
+@import './landing/header';
+@import './landing/workflow';
+@import './landing/features';
+@import './landing/techs';

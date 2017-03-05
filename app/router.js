@@ -7,6 +7,13 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('docs');
+  this.route('landing', {
+    path: '/'
+  });
+  this.route('not-found', {
+    path: '/*path'
+  });
 });
 
 export default Router;

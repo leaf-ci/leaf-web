@@ -1,0 +1,221 @@
+<section class="hero is-fullheight {{unless isOpened 'is-primary'}} b-wallpaper">
+  <div class="hero-head b-header {{if isOpened ' is-active'}}">
+    <header class="nav">
+      <div class="container">
+        <div class="nav-left">
+          <a class="nav-item b-logo">
+            <img
+                src="/assets/images/leaf.svg"
+                class="b-logo__icon"/>
+            <span class="b-logo__text title">Leaf CI</span>
+          </a>
+        </div>
+        <span {{action 'toggle'}} class="nav-toggle{{if isOpened ' is-active'}}">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class="nav-right nav-menu{{if isOpened ' is-active'}}">
+          {{#link-to 'landing' class="nav-item" activeClass="is-active"}}
+            Home
+          {{/link-to}}
+          {{#link-to 'docs' class="nav-item" activeClass="is-active"}}
+            Docs
+          {{/link-to}}
+          <span class="nav-item">
+            {{#link-to 'docs' class="button is-success"}}
+              <span>Sign in with GitHub</span>
+              <span class="icon">
+                <i class="fa fa-github"></i>
+              </span>
+            {{/link-to}}
+          </span>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="hero-body">
+    <div class="container has-text-centered">
+        <h1 class="title is-1" style="color: #fff">Build, Test &amp; Deploy</h1>
+        <h3 class="subtitle is-3" style="color: rgba(255, 255, 255, 0.9)">
+          Do not allow your leaf to fall
+        </h3>
+        {{#link-to 'docs' class="button is-large is-success"}}
+          <span class="icon is-medium">
+            <i class="fa fa-github"></i>
+          </span>
+          <span>Sign Up</span>
+        {{/link-to}}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-mobile is-multiline">
+      <div class="column is-12 has-text-centered">
+        <div class="title is-1" style="color: #3eaaaf">Features</div>
+      </div>
+      <div class="column is-12-mobile is-3-desktop is-6-tablet b-feature">
+        <img class="b-feature__image" src="/assets/images/settings.svg" alt="">
+        <h1 class="title has-text-centered">Customizable</h1>
+        <p class="b-feature__description">
+          Leaf CI is fully customizeble.
+          Via simple YAML file you can add what ever you want
+          to add to successful pass the build. Also we provide support.
+        </p>
+      </div>
+      <div class="column is-12-mobile is-3-desktop is-6-tablet b-feature">
+        <img class="b-feature__image" src="/assets/images/whale.svg" alt="">
+        <h1 class="title has-text-centered">Docker</h1>
+        <p class="b-feature__description">
+          Leaf CI created with docker in mind.
+          You can build, test and deploy your docker containers with ease
+          no matter what inside the container.
+        </p>
+      </div>
+      <div class="column is-12-mobile is-3-desktop is-6-tablet b-feature">
+        <img class="b-feature__image" src="/assets/images/github.svg" alt="">
+        <h1 class="title has-text-centered">Github</h1>
+        <p class="b-feature__description">
+          Our service provides github build workflow.
+          You push into your repo,
+          we clone your repo, then platform execute tasks inside
+          leaf-ci.yml file.
+        </p>
+      </div>
+      <div class="column is-12-mobile is-3-desktop is-6-tablet b-feature">
+        <img
+          class="b-feature__image"
+          src="/assets/images/containers.png"
+          alt="LXC/LXD">
+        <h1 class="title has-text-centered">LXC</h1>
+        <p class="b-feature__description">
+          Leaf CI based on linux virtual
+          containers LXC/LXD, them provides build speed and isolotaion
+          from other users for successful and secure build.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-vcentered b-technologies">
+      <div class="column is-6 b-technologies__images">
+        <img
+          src="/assets/images/ror.png"
+          style="height: 4rem; width: auto; margin: 10px"
+          alt="Ruby on Rails"/>
+        <img
+          src="/assets/images/ruby.png"
+          style="height: 4rem; width: auto; margin: 10px"
+          alt=""/>
+        <img
+          src="/assets/images/ember.svg"
+          style="height: 4rem; width: auto; margin: 10px"
+          alt="EmberJS"/><br>
+        <img
+          src="/assets/images/bulma.png"
+          style="height: 4rem; width: auto; margin: 10px"
+          alt="Bulma"/>
+        <img
+          src="/assets/images/ansible.png"
+          style="height: 4rem; width: auto; margin: 10px"
+          alt="Ansible"/>
+      </div>
+      <div class="column is-6 b-technologies__text">
+        <h3 class="subtitle is-4">Some pretty things<br>We use in Leaf CI</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-vcentered is-multiline b-workflow">
+    <div class="column is-12 has-text-centered ">
+      <div class="title is-1" style="color: #3eaaaf">Workflow</div>
+    </div>
+    <div class="column has-text-centered">
+      <img
+        src="/assets/images/light-bulb.svg"
+        class="b-workflow__image"
+        alt="Idea"/>
+      <h1 class="subtitle is-4">Idea</h1>
+    </div>
+    <div class="column has-text-centered">
+      <div class="b-arrow"></div>
+    </div>
+    <div class="column has-text-centered">
+      <img
+        src="/assets/images/tools.svg"
+        class="b-workflow__image"
+        alt="Build"/>
+      <h1 class="subtitle is-4">Build</h1>
+    </div>
+    <div class="column has-text-centered">
+      <div class="b-arrow"></div>
+    </div>
+    <div class="column has-text-centered">
+      <img
+        src="/assets/images/flask.svg"
+        class="b-workflow__image"
+        alt="Test"/>
+      <h1 class="subtitle is-4">Test</h1>
+    </div>
+    <div class="column has-text-centered">
+      <div class="b-arrow"></div>
+    </div>
+    <div class="column has-text-centered">
+      <img
+        src="/assets/images/trolley.svg"
+        class="b-workflow__image"
+        alt="Deploy or deliver"/>
+      <h1 class="subtitle is-4">Deploy</h1>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="section">
+ <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column is-6 has-text-centered">
+        <img src="/assets/images/imac.png" alt="Statistics">
+      </div>
+      <div class="column is-6 content">
+        <h1 class="title is-2 b-music">Music for your ears</h1>
+        <blockquote>Fully integrated with GitHub.</blockquote>
+        <blockquote>Supports Docker builds.</blockquote>
+        <blockquote>Build as fast as possible.</blockquote>
+        <blockquote>Donate if you want more.</blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title is-2" style="line-height: 160%; color: #3eaaaf">
+        Interested in building your<br/>public projects with Leaf CI?
+      </h1>
+      <a class="button is-large is-success">
+          <span class="icon is-medium">
+            <i class="fa fa-github"></i>
+          </span>
+          <span>Sign Up</span>
+        </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <strong>Leaf CI</strong> is the best platform for your build &copy; 2017
+    </div>
+  </div>
+</footer>

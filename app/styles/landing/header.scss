@@ -1,0 +1,28 @@
+.b-wallpaper {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(http://wallpapershome.com/images/pages/pic_hs/181.jpg);
+  background-color: white !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.b-logo {
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  &:hover &__icon {
+    transform: rotate(-15deg);
+  }
+}
+
+.b-wallpaper .b-header.is-active {
+  background-color: whitesmoke;
+  .nav-toggle span {
+    background-color: black;
+  }
+}

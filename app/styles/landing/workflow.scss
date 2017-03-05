@@ -1,0 +1,21 @@
+.b-workflow {
+  &__image {
+    height: 6rem;
+    width: 6rem;
+    margin-bottom: 1rem;
+  }
+  .column:hover &__image {
+    transform: rotate(-15deg);
+  }
+}
+
+.b-arrow {
+  border-bottom: 3px dashed black;
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+    border-bottom: none;
+    height: 3rem;
+    width: 3px;
+    border-left: 3px dashed black;
+  }
+}

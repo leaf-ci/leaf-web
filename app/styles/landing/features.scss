@@ -1,0 +1,15 @@
+.b-feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__image {
+    margin-bottom: 1rem;
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  &__description {
+    max-width: 200px;
+    text-align: justify;
+  }
+}
