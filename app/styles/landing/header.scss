@@ -3,7 +3,7 @@
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url(http://wallpapershome.com/images/pages/pic_hs/181.jpg);
+    url(/assets/images/wallpaper.jpg);
   background-color: white !important;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,9 +20,15 @@
   }
 }
 
-.b-wallpaper .b-header.is-active {
-  background-color: whitesmoke;
-  .nav-toggle span {
-    background-color: black;
+.b-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  &__content.is-active, &__content.b-header__content--white {
+    background-color: whitesmoke;
+    .nav-toggle span {
+      background-color: black;
+    }
   }
 }

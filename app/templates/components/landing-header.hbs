@@ -1,0 +1,64 @@
+<section class="b-header hero {{unless isOpened 'is-primary'}}">
+  <header
+    class="b-header__content {{if isOpened 'is-active'}}">
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-left">
+          {{#link-to 'landing'
+            class="nav-item b-logo"
+            invokeAction=(action 'close')
+          }}
+            <img
+                src="/assets/images/leaf.svg"
+                class="b-logo__icon"/>
+            <span class="b-logo__text title">Leaf CI</span>
+          {{/link-to}}
+        </div>
+        <span {{action 'toggle'}}
+          class="nav-toggle
+          {{if isOpened 'is-active'}}">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class="nav-right nav-menu {{if isOpened 'is-active'}}">
+          {{#link-to 'landing'
+            class="nav-item"
+            activeClass="is-active"
+            invokeAction=(action 'close')
+          }}
+            Home
+          {{/link-to}}
+          {{#link-to 'app.docs'
+            class="nav-item"
+            activeClass="is-active"
+            invokeAction=(action 'close')
+          }}
+            Docs
+          {{/link-to}}
+          {{#if true}}
+            <span class="nav-item">
+              {{#link-to 'app.docs'
+                class="button is-success"
+                invokeAction=(action 'close')
+              }}
+                <span>Sign in with GitHub</span>
+                <span class="icon">
+                  <i class="fa fa-github"></i>
+                </span>
+              {{/link-to}}
+            </span>
+          {{else}}
+            {{#link-to 'app.logout'
+              class="nav-item"
+              activeClass="is-active"
+              invokeAction=(action 'close')
+            }}
+              Log Out
+            {{/link-to}}
+          {{/if}}
+        </div>
+      </div>
+    </nav>
+  </header>
+</section>

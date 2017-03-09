@@ -1,46 +1,13 @@
-<section class="hero is-fullheight {{unless isOpened 'is-primary'}} b-wallpaper">
-  <div class="hero-head b-header {{if isOpened ' is-active'}}">
-    <header class="nav">
-      <div class="container">
-        <div class="nav-left">
-          <a class="nav-item b-logo">
-            <img
-                src="/assets/images/leaf.svg"
-                class="b-logo__icon"/>
-            <span class="b-logo__text title">Leaf CI</span>
-          </a>
-        </div>
-        <span {{action 'toggle'}} class="nav-toggle{{if isOpened ' is-active'}}">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-        <div class="nav-right nav-menu{{if isOpened ' is-active'}}">
-          {{#link-to 'landing' class="nav-item" activeClass="is-active"}}
-            Home
-          {{/link-to}}
-          {{#link-to 'docs' class="nav-item" activeClass="is-active"}}
-            Docs
-          {{/link-to}}
-          <span class="nav-item">
-            {{#link-to 'docs' class="button is-success"}}
-              <span>Sign in with GitHub</span>
-              <span class="icon">
-                <i class="fa fa-github"></i>
-              </span>
-            {{/link-to}}
-          </span>
-        </div>
-      </div>
-    </header>
-  </div>
+{{landing-header}}
+
+<section class="hero is-primary is-fullheight b-wallpaper">
   <div class="hero-body">
     <div class="container has-text-centered">
-        <h1 class="title is-1" style="color: #fff">Build, Test &amp; Deploy</h1>
-        <h3 class="subtitle is-3" style="color: rgba(255, 255, 255, 0.9)">
+        <h1 class="title is-1">Build, Test &amp; Deploy</h1>
+        <h3 class="subtitle is-3">
           Do not allow your leaf to fall
         </h3>
-        {{#link-to 'docs' class="button is-large is-success"}}
+        {{#link-to 'app.docs' class="button is-large is-success"}}
           <span class="icon is-medium">
             <i class="fa fa-github"></i>
           </span>

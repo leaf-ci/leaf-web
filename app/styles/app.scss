@@ -1,5 +1,6 @@
 /* Vars */
 $success: #39aa56;
+$primary: transparent;
 
 /* Libs */
 @import 'bulma';
@@ -11,3 +12,4 @@ $success: #39aa56;
 @import './landing/workflow';
 @import './landing/features';
 @import './landing/techs';
+@import './app/header';
