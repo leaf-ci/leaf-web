@@ -1,5 +1,13 @@
 import Ember from 'ember';
-import MenuMixin from 'leaf-web/mixins/menu';
 
-export default Ember.Component.extend(MenuMixin, {
+export default Ember.Component.extend({
+  isOpened: false,
+  actions: {
+    toggle() {
+      this.toggleProperty('isOpened');
+    },
+    close() {
+      this.set('isOpened', false);
+    }
+  },
 });

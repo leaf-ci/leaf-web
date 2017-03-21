@@ -1,188 +1,206 @@
-{{landing-header}}
+<div class="landing-layout">
+  {{app-header}}
 
-<section class="hero is-primary is-fullheight b-wallpaper">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-        <h1 class="title is-1">Build, Test &amp; Deploy</h1>
-        <h3 class="subtitle is-3">
-          Do not allow your leaf to fall
-        </h3>
-        {{#link-to 'app.docs' class="button is-large is-success"}}
-          <span class="icon is-medium">
-            <i class="fa fa-github"></i>
-          </span>
-          <span>Sign Up</span>
-        {{/link-to}}
-    </div>
-  </div>
-</section>
+  <div class="leaf-landing">
+    <section class="hero is-fullheight leaf-wallpaper">
+      <div class="wallpaper-layer wallpaper-trees"></div>
+      <img class="wallpaper-actor wallpaper-sun" src="/assets/images/sun.svg">
+      <div class="wallpaper-layer wallpaper-sky"></div>
+      <div class="wallpaper-road"></div>
+      <img class="wallpaper-actor wallpaper-jeep" src="/assets/images/van.svg"/>
+      <img class="wallpaper-actor wallpaper-car" src="/assets/images/automobile.svg"/>
+      <div class="wallpaper-layer wallpaper-link"></div>
+      <div class="wallpaper-layer wallpaper-build"></div>
+      <div class="wallpaper-layer wallpaper-chimney"></div>
+      <div class="wallpaper-layer wallpaper-house"></div>
+      <div class="rocket-rotator">
+        <img class="wallpaper-actor wallpaper-rocket" src="/assets/images/rocket.svg"/>
+      </div>
+      <img class="wallpaper-actor wallpaper-satellite" src="/assets/images/satellite.svg"/>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title is-1" style="color: #3eaaaf">Build, Test &amp; Deploy</h1>
+            <h3 class="subtitle is-3">
+              Do not allow your build to fall
+            </h3>
+            {{#link-to 'docs' class="button is-large is-success"}}
+              <span class="icon is-medium">
+                <i class="fa fa-github"></i>
+              </span>
+              <span>Sign Up</span>
+            {{/link-to}}
+        </div>
+      </div>
+    </section>
 
-<section class="section">
-  <div class="container">
-    <div class="columns is-mobile is-multiline">
-      <div class="column is-12 has-text-centered">
-        <div class="title is-1" style="color: #3eaaaf">Features</div>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-mobile is-multiline">
+          <div class="column is-12 has-text-centered">
+            <div class="title is-1" style="color: #3eaaaf">Features</div>
+          </div>
+          <div class="column is-12-mobile is-3-desktop is-6-tablet landing-feature">
+            <img class="landing-feature__image" src="/assets/images/settings.svg" alt="">
+            <h1 class="title has-text-centered">Customizable</h1>
+            <p class="landing-feature__description">
+              Leaf CI is fully customizeble.
+              Via simple YAML file you can add what ever you want
+              to add to successful pass the build. Also we provide support.
+            </p>
+          </div>
+          <div class="column is-12-mobile is-3-desktop is-6-tablet landing-feature">
+            <img class="landing-feature__image" src="/assets/images/whale.svg" alt="">
+            <h1 class="title has-text-centered">Docker</h1>
+            <p class="landing-feature__description">
+              Leaf CI created with docker in mind.
+              You can build, test and deploy your docker containers with ease
+              no matter what inside the container.
+            </p>
+          </div>
+          <div class="column is-12-mobile is-3-desktop is-6-tablet landing-feature">
+            <img class="landing-feature__image" src="/assets/images/github.svg" alt="">
+            <h1 class="title has-text-centered">Github</h1>
+            <p class="landing-feature__description">
+              Our service provides github build workflow.
+              You push into your repo,
+              we clone your repo, then platform execute tasks inside
+              leaf-ci.yml file.
+            </p>
+          </div>
+          <div class="column is-12-mobile is-3-desktop is-6-tablet landing-feature">
+            <img
+              class="landing-feature__image"
+              src="/assets/images/containers.png"
+              alt="LXC/LXD">
+            <h1 class="title has-text-centered">LXC</h1>
+            <p class="landing-feature__description">
+              Leaf CI based on linux virtual
+              containers LXC/LXD, them provides build speed and isolotaion
+              from other users for successful and secure build.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="column is-12-mobile is-3-desktop is-6-tablet b-feature">
-        <img class="b-feature__image" src="/assets/images/settings.svg" alt="">
-        <h1 class="title has-text-centered">Customizable</h1>
-        <p class="b-feature__description">
-          Leaf CI is fully customizeble.
-          Via simple YAML file you can add what ever you want
-          to add to successful pass the build. Also we provide support.
-        </p>
-      </div>
-      <div class="column is-12-mobile is-3-desktop is-6-tablet b-feature">
-        <img class="b-feature__image" src="/assets/images/whale.svg" alt="">
-        <h1 class="title has-text-centered">Docker</h1>
-        <p class="b-feature__description">
-          Leaf CI created with docker in mind.
-          You can build, test and deploy your docker containers with ease
-          no matter what inside the container.
-        </p>
-      </div>
-      <div class="column is-12-mobile is-3-desktop is-6-tablet b-feature">
-        <img class="b-feature__image" src="/assets/images/github.svg" alt="">
-        <h1 class="title has-text-centered">Github</h1>
-        <p class="b-feature__description">
-          Our service provides github build workflow.
-          You push into your repo,
-          we clone your repo, then platform execute tasks inside
-          leaf-ci.yml file.
-        </p>
-      </div>
-      <div class="column is-12-mobile is-3-desktop is-6-tablet b-feature">
-        <img
-          class="b-feature__image"
-          src="/assets/images/containers.png"
-          alt="LXC/LXD">
-        <h1 class="title has-text-centered">LXC</h1>
-        <p class="b-feature__description">
-          Leaf CI based on linux virtual
-          containers LXC/LXD, them provides build speed and isolotaion
-          from other users for successful and secure build.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="section">
-  <div class="container">
-    <div class="columns is-vcentered b-technologies">
-      <div class="column is-6 b-technologies__images">
-        <img
-          src="/assets/images/ror.png"
-          style="height: 4rem; width: auto; margin: 10px"
-          alt="Ruby on Rails"/>
-        <img
-          src="/assets/images/ruby.png"
-          style="height: 4rem; width: auto; margin: 10px"
-          alt=""/>
-        <img
-          src="/assets/images/ember.svg"
-          style="height: 4rem; width: auto; margin: 10px"
-          alt="EmberJS"/><br>
-        <img
-          src="/assets/images/bulma.png"
-          style="height: 4rem; width: auto; margin: 10px"
-          alt="Bulma"/>
-        <img
-          src="/assets/images/ansible.png"
-          style="height: 4rem; width: auto; margin: 10px"
-          alt="Ansible"/>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-vcentered landing-technologies">
+          <div class="column is-6 landing-technologies__images">
+            <img
+              src="/assets/images/ror.png"
+              style="height: 4rem; width: auto; margin: 10px"
+              alt="Ruby on Rails"/>
+            <img
+              src="/assets/images/ruby.png"
+              style="height: 4rem; width: auto; margin: 10px"
+              alt=""/>
+            <img
+              src="/assets/images/ember.svg"
+              style="height: 4rem; width: auto; margin: 10px"
+              alt="EmberJS"/><br>
+            <img
+              src="/assets/images/bulma.png"
+              style="height: 4rem; width: auto; margin: 10px"
+              alt="Bulma"/>
+            <img
+              src="/assets/images/ansible.png"
+              style="height: 4rem; width: auto; margin: 10px"
+              alt="Ansible"/>
+          </div>
+          <div class="column is-6 landing-technologies__text">
+            <h3 class="subtitle is-4">Some pretty things<br>We use in Leaf CI</h3>
+          </div>
+        </div>
       </div>
-      <div class="column is-6 b-technologies__text">
-        <h3 class="subtitle is-4">Some pretty things<br>We use in Leaf CI</h3>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns is-vcentered is-multiline landing-workflow">
+        <div class="column is-12 has-text-centered ">
+          <div class="title is-1" style="color: #3eaaaf">Workflow</div>
+        </div>
+        <div class="column has-text-centered">
+          <img
+            src="/assets/images/light-bulb.svg"
+            class="landing-workflow__image"
+            alt="Idea"/>
+          <h1 class="subtitle is-4">Idea</h1>
+        </div>
+        <div class="column has-text-centered">
+          <div class="landing-arrow"></div>
+        </div>
+        <div class="column has-text-centered">
+          <img
+            src="/assets/images/tools.svg"
+            class="landing-workflow__image"
+            alt="Build"/>
+          <h1 class="subtitle is-4">Build</h1>
+        </div>
+        <div class="column has-text-centered">
+          <div class="landing-arrow"></div>
+        </div>
+        <div class="column has-text-centered">
+          <img
+            src="/assets/images/flask.svg"
+            class="landing-workflow__image"
+            alt="Test"/>
+          <h1 class="subtitle is-4">Test</h1>
+        </div>
+        <div class="column has-text-centered">
+          <div class="landing-arrow"></div>
+        </div>
+        <div class="column has-text-centered">
+          <img
+            src="/assets/images/trolley.svg"
+            class="landing-workflow__image"
+            alt="Deploy or deliver"/>
+          <h1 class="subtitle is-4">Deploy</h1>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-vcentered is-multiline b-workflow">
-    <div class="column is-12 has-text-centered ">
-      <div class="title is-1" style="color: #3eaaaf">Workflow</div>
-    </div>
-    <div class="column has-text-centered">
-      <img
-        src="/assets/images/light-bulb.svg"
-        class="b-workflow__image"
-        alt="Idea"/>
-      <h1 class="subtitle is-4">Idea</h1>
-    </div>
-    <div class="column has-text-centered">
-      <div class="b-arrow"></div>
-    </div>
-    <div class="column has-text-centered">
-      <img
-        src="/assets/images/tools.svg"
-        class="b-workflow__image"
-        alt="Build"/>
-      <h1 class="subtitle is-4">Build</h1>
-    </div>
-    <div class="column has-text-centered">
-      <div class="b-arrow"></div>
-    </div>
-    <div class="column has-text-centered">
-      <img
-        src="/assets/images/flask.svg"
-        class="b-workflow__image"
-        alt="Test"/>
-      <h1 class="subtitle is-4">Test</h1>
-    </div>
-    <div class="column has-text-centered">
-      <div class="b-arrow"></div>
-    </div>
-    <div class="column has-text-centered">
-      <img
-        src="/assets/images/trolley.svg"
-        class="b-workflow__image"
-        alt="Deploy or deliver"/>
-      <h1 class="subtitle is-4">Deploy</h1>
-    </div>
-  </div>
-  </div>
-</section>
-
-<section class="section">
- <div class="container">
-    <div class="columns is-vcentered">
-      <div class="column is-6 has-text-centered">
-        <img src="/assets/images/imac.png" alt="Statistics">
       </div>
-      <div class="column is-6 content">
-        <h1 class="title is-2 b-music">Music for your ears</h1>
-        <blockquote>Fully integrated with GitHub.</blockquote>
-        <blockquote>Supports Docker builds.</blockquote>
-        <blockquote>Build as fast as possible.</blockquote>
-        <blockquote>Donate if you want more.</blockquote>
+    </section>
+
+    <section class="section">
+     <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-6 has-text-centered">
+            <img src="/assets/images/imac.png" alt="Statistics">
+          </div>
+          <div class="column is-6 content">
+            <h1 class="title is-2 landing-music">Music for your ears</h1>
+            <blockquote>Fully integrated with GitHub.</blockquote>
+            <blockquote>Supports Docker builds.</blockquote>
+            <blockquote>Build as fast as possible.</blockquote>
+            <blockquote>Donate if you want more.</blockquote>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title is-2" style="line-height: 160%; color: #3eaaaf">
-        Interested in building your<br/>public projects with Leaf CI?
-      </h1>
-      <a class="button is-large is-success">
-          <span class="icon is-medium">
-            <i class="fa fa-github"></i>
-          </span>
-          <span>Sign Up</span>
-        </a>
-    </div>
-  </div>
-</section>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title is-2" style="line-height: 160%; color: #3eaaaf">
+            Interested in building your<br/>public projects with Leaf CI?
+          </h1>
+          <a class="button is-large is-success">
+              <span class="icon is-medium">
+                <i class="fa fa-github"></i>
+              </span>
+              <span>Sign Up</span>
+            </a>
+        </div>
+      </div>
+    </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <strong>Leaf CI</strong> is the best platform for your build &copy; 2017
-    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <strong>Leaf CI</strong> is the best platform for your build &copy; 2017
+        </div>
+      </div>
+    </footer>
   </div>
-</footer>
+</div>

@@ -1,0 +1,27 @@
+.dashboard {
+  position: absolute;
+  height: calc(100% - 3.5rem);
+  width: 100%;
+}
+
+.dashboard-content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.dashboard-projects {
+  float: left;
+  width: 25%;
+  max-width: 325px;
+  min-height: 100%;
+  background-color: white;
+}
+
+.dashboard-builds {
+  border-left: 3px solid #f1f1f1;
+  float: left;
+  width: 100%;
+  max-width: calc(100% - 325px);
+  min-height: 100%;
+}

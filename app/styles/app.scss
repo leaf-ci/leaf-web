@@ -1,15 +1,26 @@
 /* Vars */
 $success: #39aa56;
-$primary: transparent;
+$primary: black;
 
 /* Libs */
 @import 'bulma';
 @import 'font-awesome';
 
 /* Styles */
-@import './reset';
-@import './landing/header';
-@import './landing/workflow';
-@import './landing/features';
-@import './landing/techs';
-@import './app/header';
+@import './layouts/landing';
+@import './layouts/dashboard';
+
+@import './components/app-header';
+
+/* Reset */
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow-y: auto;
+}
+

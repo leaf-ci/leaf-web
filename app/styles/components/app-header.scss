@@ -1,0 +1,21 @@
+.app-header {
+  background-color: #f1f1f1;
+}
+
+.landing-layout .app-header {
+  background-color: white;
+}
+
+.leaf-logo {
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  &__text {
+    color: #0f0f0f;
+    font-weight: 300;
+  }
+  &:hover &__icon {
+    transform: rotate(-15deg);
+  }
+}

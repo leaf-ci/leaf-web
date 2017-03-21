@@ -7,13 +7,14 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('app', {path: ''}, function() {
-    this.route('dashboard');
-    this.route('docs');
-    this.route('profile');
-    this.route('logout');
-  });
   this.route('landing', {path: '/'});
+  this.route('profile');
+  this.route('logout');
+  this.route('docs');
+  this.route('dashboard', function() {
+    this.route('history', {path: '/project_id/builds'});
+    this.route('current', {path: '/project_id'});
+  });
   this.route('not-found', {path: '/*path'});
 });
 

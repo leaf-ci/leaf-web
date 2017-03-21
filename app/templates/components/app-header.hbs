@@ -1,58 +1,47 @@
-<div class="hero b-header">
-  <header
-    class="hero-head b-header__content b-header__content--white
-    {{if isOpened 'is-active'}}">
+<div class="app-header hero">
+  <header class="hero-head">
     <nav class="nav">
       <div class="container">
         <div class="nav-left">
           {{#link-to 'landing'
-            class="nav-item b-logo"
+            class="leaf-logo nav-item"
             activeClass="is-active"
             invokeAction=(action 'close')
           }}
             <img
                 src="/assets/images/leaf.svg"
-                class="b-logo__icon"/>
+                class="leaf-logo__icon"/>
             <span
-              class="b-logo__text title">
+              class="leaf-logo__text title">
               Leaf CI
             </span>
           {{/link-to}}
         </div>
         <span
           {{action 'toggle'}}
-          class="nav-toggle {{if isOpened 'is-active'}}">
+          class="nav-toggle nav-toggle-white {{if isOpened 'is-active'}}">
           <span></span>
           <span></span>
           <span></span>
         </span>
         <div class="nav-right nav-menu {{if isOpened 'is-active'}}">
-          {{#link-to 'landing'
+        {{#link-to 'landing'
             class="nav-item"
             activeClass="is-active"
             invokeAction=(action 'close')
           }}
             Home
           {{/link-to}}
-          {{#link-to 'app.docs'
+          {{#link-to 'docs'
             class="nav-item"
             activeClass="is-active"
             invokeAction=(action 'close')
           }}
             Docs
           {{/link-to}}
-          {{#if false}}
-            {{#link-to 'app.profile'
-              class="nav-item"
-              activeClass="is-active"
-              invokeAction=(action 'close')
-            }}
-              Profile
-            {{/link-to}}
-          {{/if}}
-          {{#if false}}
+          {{#if true}}
             <span class="nav-item">
-              {{#link-to 'app.docs'
+              {{#link-to 'docs'
                 class="button is-success"
                 invokeAction=(action 'close')
               }}
@@ -63,7 +52,7 @@
               {{/link-to}}
             </span>
           {{else}}
-            {{#link-to 'app.logout'
+            {{#link-to 'logout'
               class="nav-item"
               activeClass="is-active"
               invokeAction=(action 'close')
