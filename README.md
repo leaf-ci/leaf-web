@@ -1,2 +1,2 @@
 # leaf-web
-![Landing](https://raw.github.com/leaf-ci/leaf-web/blob/master/leaf-ci.jpg)
+![Landing](https://raw.githubusercontent.com/leaf-ci/leaf-web/master/leaf-ci.jpg)
